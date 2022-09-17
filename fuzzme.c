@@ -23,7 +23,7 @@ int fuzzme(char *buf)
 
 #define BUFSZ 256
 
-int LLVMFuzzerTestOneInput(int argc, char** argv)
+int main(int argc, char** argv)
 {
     char buf[BUFSZ] = { 0 };
     FILE* f = NULL;
